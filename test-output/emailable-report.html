@@ -8,113 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,110</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,254</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">8,364</th><th colspan="2"></th></tr>
+<tr><th colspan="8">opencartSuite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,674</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC_002_LoginTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1675757480533</td><td rowspan="1">1046</td></tr><tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC_002_LoginTest</td><td><a href="#m1">teadDown</a></td><td rowspan="1">1675757481617</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC_002_LoginTest</td><td><a href="#m2">test_Login</a></td><td rowspan="1">1675757481604</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC_001_AccountRegistrationTest</td><td><a href="#m3">test_account_Registration</a></td><td rowspan="1">1675757483823</td><td rowspan="1">3658</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">opencartSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC_001_AccountRegistrationTest</td><td><a href="#m0">test_account_Registration</a></td><td rowspan="1">1675845128906</td><td rowspan="1">2757</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC_002_LoginTest</td><td><a href="#m1">test_Login</a></td><td rowspan="1">1675845132890</td><td rowspan="1">822</td></tr><tr class="passedeven"><td rowspan="5">testCases.TC_LoginDataDrivenTest</td><td><a href="#m2">test_LoginDDT</a></td><td rowspan="5">1675845136893</td><td rowspan="5">10484</td></tr><tr class="passedeven"><td><a href="#m3">test_LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m4">test_LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m5">test_LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m6">test_LoginDDT</a></td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">testCases.TC_002_LoginTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1423)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1439)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1420)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1413)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:419)
-	at testBase.BaseClass.setup(BaseClass.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1577)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1444)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1279)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1198)
-	... 25 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:948)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1638)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1504)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1562)
-	... 29 more
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC_002_LoginTest#teadDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC_002_LoginTest#test_Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1423)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1439)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1420)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1413)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1204)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:419)
-	at testBase.BaseClass.setup(BaseClass.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1577)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1444)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1279)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1198)
-	... 25 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:948)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1638)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1504)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1562)
-	... 29 more
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test</h2><h3 id="m3">testCases.TC_001_AccountRegistrationTest#test_account_Registration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testCases.TC_001_AccountRegistrationTest#test_account_Registration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC_002_LoginTest#test_Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC_LoginDataDrivenTest#test_LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>pooja@yahoo</td><td>1234</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TC_LoginDataDrivenTest#test_LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>pratyush@gmail.com</td><td>DDPP</td><td>Valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TC_LoginDataDrivenTest#test_LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>padma@gmail.com</td><td>ganesh</td><td>Valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TC_LoginDataDrivenTest#test_LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>poojag@gmail.com</td><td>pooja</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TC_LoginDataDrivenTest#test_LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>dhananjayadj418@gmail.com</td><td>abcd</td><td>Valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
